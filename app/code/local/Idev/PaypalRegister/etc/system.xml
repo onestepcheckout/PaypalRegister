@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <paypalregister>
+            <label>PaypalRegister</label>
+            <tab>sales</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>306</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label comment">
+                    <comment><![CDATA[<br />
+                        <div class="box">
+                            <p>See documentation and support for <a href="http://www.onestepcheckout.com">PaypalRegister</a></p>
+                        </div>
+                        ]]>
+                    </comment>
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable_paypalregister>
+                            <label>Activate PaypalRegister</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Activates PaypalRegister on your store by adding Observer to Paypal methods and registers users when they have successfully completed the order via Paypal checkout methods.]]></comment>
+                        </enable_paypalregister>
+                    </fields>
+                </general>
+            </groups>
+        </paypalregister>
+    </sections>
+</config>

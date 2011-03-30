@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Idev_PaypalRegister>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Idev_PaypalRegister>
+    </modules>
+</config>
