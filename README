@@ -1,0 +1,22 @@
+What: 
+Magento extension (tested with 1.4* and 1.5* series) 
+
+Why: 
+You need this when you have paypal_express enabled and you need to enable client registration. Currently paypal_express only
+allows users to check out as authorised or guests and ignores Magento built in registration possibilities
+
+How: 
+it adds 2 listeners (before and after quote conversion to order) and listens if paypal_express payment method is used. 
+If it's used it imports/sets user data to quote and customer object and sets the password (if not chosed by customer) to quote 
+and sets the method back to register
+
+Installation:
+extract this extension to your magento root
+
+Usage:
+you can enable and disable this extension from System > Configuration > Sales > PaypalRegister 
+
+Uninstall:
+to uninstall this extension please remove the following files:
+
+and to completely remove it from database please execute the followintg querys: 
