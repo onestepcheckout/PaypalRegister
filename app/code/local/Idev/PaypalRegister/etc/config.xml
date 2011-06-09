@@ -15,6 +15,11 @@
                     <service_quote>Idev_PaypalRegister_Model_Sales_Service_Quote</service_quote>
                 </rewrite>
             </sales>
+            <paypal>
+                <rewrite>
+                    <express_checkout>Idev_PaypalRegister_Model_Express_Checkout</express_checkout>
+                </rewrite>
+            </paypal>
         </models>
     </global>
     <frontend>
